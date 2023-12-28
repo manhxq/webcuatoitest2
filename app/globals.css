@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+
+
+
+  body {
+    @apply bg-backgroundColor-dimBackground ;
+  }
+}
+
+@layer utilities {
+
+  .header{
+    font-family: var('--font-luckiest')
+  }
+
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-3 md:px-10 xl:px-0 w-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .h1-extrabol{
+    @apply font-extrabold lg:text-[50px] lg:leading-[80px] xl:text-[78px] xl:leading-[80px]
+  }
+
+  .h1-bold{
+    @apply font-bold lg:text-[50px] lg:leading-[80px] xl:text-[78px] leading-[80px]
+  }
+
+  .h1-normal{
+    @apply font-extralight text-[50px] leading-[90px] xl:text-[78px] leading-[90px]
+  }
+
+  .h2-bold{
+    @apply font-bold text-[36px] leading-[40px] xl:text-[46px] xl:leading-[80px]
+  }
+
+  .h2-normal{
+    @apply font-extralight text-[40px] leading-[40px] xl:text-[50px] xl:leading-[90px]
+  }
+
+  .h3-bold{
+    @apply font-medium text-[20px] leading-[38px] lg:text-[30px] lg:leading-[48px] xl:text-[40px] xl:leading-[58px]
+  }
+
+
+  .p-20-medium{
+    @apply font-bold text-[20px] leading-[20px] xl:text-[30px] leading-[50px]
+  }
+
+  .p-20-normal{
+    @apply font-normal text-[16px] leading-[20px] xl:text-[20px] leading-[30px]
+  }
+
+  .p-20-light{
+    @apply font-light text-[20px] leading-[30px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] leading-[50px]
+  }
+
+  .p-16-bold{
+    @apply font-bold text-[16px] leading-[16px] lg:text-[26px] lg:leading-[26px] xl:text-[36px] leading-[36px]
+  }
+
+  .p-16-medium{
+    @apply font-medium text-[16px] leading-[16px] lg:text-[26px] lg:leading-[26px] xl:text-[36px] leading-[36px]
+  }
+
+  .p-16-normal{
+    @apply font-norlmal text-[16px] leading-[16px] lg:text-[26px] lg:leading-[26px] xl:text-[36px] leading-[36px]
+  }
+
+  .p-14-bold{
+    @apply font-bold text-[14px] leading-[14px] lg:text-[24px] lg:leading-[24px] xl:text-[34px] leading-[34px]
+  }
+
+  .p-14-medium{
+    @apply font-medium text-[14px] leading-[14px] lg:text-[24px] lg:leading-[24px] xl:text-[34px] leading-[34px]
+  }
+
+  .p-14-normal{
+    @apply font-norlmal text-[14px] leading-[14px] lg:text-[24px] lg:leading-[24px] xl:text-[34px] xl:leading-[34px]
+  }
+
+  
+
+}
